@@ -7,7 +7,7 @@
 
 <style scoped>
     #pixel_img {
-        height: 900px;
+        height: 720px;
     }
 
     #phone_frame {
