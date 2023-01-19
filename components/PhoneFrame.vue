@@ -1,7 +1,6 @@
 <template>
     <div id="phone_frame">
         <img id="pixel_img" src="/pixel_frame.png" />
-        <slot />
     </div>
 </template>
 
