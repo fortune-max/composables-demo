@@ -1,9 +1,9 @@
 <script setup>
-    const props = defineProps(["currTime", "currDay"]);
+    const props = defineProps(["currTime", "currDay", "opacity"]);
 </script>
 
 <template>
-    <div id="lockscreen-container">
+    <div id="lockscreen-container" :style="{opacity: props.opacity}">
         <img id="lockscreen-img" src="/lockscreen.jpg" />
         <span id="time-disp">{{ props.currTime }}</span>
         <span id="date-disp">{{ props.currDay }}</span>
