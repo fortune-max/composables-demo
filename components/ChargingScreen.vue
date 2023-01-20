@@ -16,12 +16,13 @@
 
         /* style for placing in phone frame */
         position: relative;
-        right: 504px;
+        right: 329px;
         bottom: 16px;
     }
 
     #charging_img {
         height: 696px;
+        border-radius: 10px;
     }
 
     #charge_lvl {

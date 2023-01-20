@@ -10,10 +10,8 @@
     }
 
     #phone_frame {
-        margin-left: 50%;
-        margin-top: 20px;
-        margin-bottom: 20px;
         display: inline-block;
-        transform: translateX(-50%);
+        margin-top: 20px;
+        margin-left: 50px;
     }
 </style>
