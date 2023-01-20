@@ -1,5 +1,6 @@
 <script setup>
     const props = defineProps(["currTime", "currDay", "opacity", "batteryLevel"]);
+    const batteryLevel = computed(() => Math.max(Math.min(props.batteryLevel, 99), 10));
 </script>
 
 <template>
@@ -7,7 +8,7 @@
         <img id="homescreen-img" src="/homescreen.jpg" />
         <span id="time-disp">{{ props.currTime.slice(0,5) }}</span>
         <span id="date-disp">{{ props.currDay }}</span>
-        <span id="battery-disp">{{ props.batteryLevel }}%</span>
+        <span id="battery-disp">{{ batteryLevel }}%</span>
     </div>
 </template>
 
