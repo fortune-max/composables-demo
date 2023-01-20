@@ -9,7 +9,7 @@ import { onKeyStroke } from '@vueuse/core'
 
 // Battery stuff
 const { charging, level } = useBattery();
-const batteryLevel = computed(() => level.value * 100);
+const batteryLevel = computed(() => Math.round(level.value * 100));
 const showCharging = ref(false);
 
 whenever(charging, async () => {
