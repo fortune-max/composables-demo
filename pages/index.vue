@@ -4,7 +4,7 @@ import { promiseTimeout } from '@vueuse/core'
 import { whenever } from '@vueuse/core'
 import { useNow } from '@vueuse/core'
 import { useIdle } from '@vueuse/core'
-import { TransitionPresets, useTransition } from '@vueuse/core'
+import { useTransition } from '@vueuse/core'
 import { onKeyStroke } from '@vueuse/core'
 
 // Battery stuff
