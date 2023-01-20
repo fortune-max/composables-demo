@@ -1,4 +1,5 @@
 <script setup>
+import { format } from 'date-fns'
 import { useBattery } from '@vueuse/core'
 import { promiseTimeout } from '@vueuse/core'
 import { whenever } from '@vueuse/core'
@@ -20,8 +21,8 @@ whenever(charging, async () => {
 
 // Time stuff
 const now = useNow();
-const currTime = computed(() => `${now.value.getHours().toString().padStart(2, '0')}:${now.value.getMinutes().toString().padStart(2, '0')}:${now.value.getSeconds().toString().padStart(2, '0')}`);
-const currDay = computed (() => now.value.toDateString().slice(0, -5));
+const currTime = computed(() => format(now.value, 'HH:mm:ss'));
+const currDay = computed(() => format(now.value, 'EEE MMM d'));
 
 // Screen unlock on keypress
 const screenIsLocked = ref(true);
