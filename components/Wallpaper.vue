@@ -22,19 +22,21 @@
     }
 
     #time-disp {
-        color: white;
+        color: black;
         font-size: 47px;
         position: relative;
-        right: 240px;
+        right: 250px;
         bottom: 546px;
+        font-family: "PT Sans";
     }
 
     #date-disp {
-        color: white;
+        color: black;
         font-size: 20px;
         position: relative;
-        right: 366px;
+        right: 376px;
         bottom: 516px;
+        font-family: "PT Sans";
     }
 
     #wallpaper-container {
@@ -42,7 +44,7 @@
 
         /* style for placing in phone frame */
         position: relative;
-        right: 504px;
+        right: 329px;
         bottom: 13px;
     }
 </style>
