@@ -32,7 +32,7 @@ onKeyStroke(true, (e) => {
 
 // Idle stuff
 const showLockScreen = ref(true);
-const { idle } = useIdle(2 * 1000); // milliseconds
+const { idle } = useIdle(5 * 1000); // milliseconds
 const notIdle = computed(() => !idle.value);
 
 whenever(idle, () => {

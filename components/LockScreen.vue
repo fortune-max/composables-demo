@@ -1,5 +1,5 @@
 <script setup>
-    const props = defineProps(["currTime", "currDay", "opacity"]);
+    const props = defineProps(["currTime", "currDay", "opacity", "batteryLevel"]);
 </script>
 
 <template>
