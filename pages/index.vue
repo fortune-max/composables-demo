@@ -56,6 +56,6 @@ const brightness = useTransition(idleNum, {
 <template>
     <PhoneFrame/>
     <ChargingScreen :battery-level="batteryLevel" v-show="showCharging"/>
-    <LockScreen :curr-time="currTime" :curr-day="currDay" :opacity="brightness" v-if="screenIsLocked"/>
-    <HomeScreen :curr-time="currTime" :curr-day="currDay" :battery-level="batteryLevel" :opacity="brightness" v-if="!screenIsLocked"/>
+    <LockScreen :curr-time="currTime" :curr-day="currDay" :opacity="brightness" v-show="screenIsLocked && !showCharging"/>
+    <HomeScreen :curr-time="currTime" :curr-day="currDay" :battery-level="batteryLevel" :opacity="brightness" v-show="!screenIsLocked && !showCharging"/>
 </template>
