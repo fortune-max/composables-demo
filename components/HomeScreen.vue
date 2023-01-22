@@ -50,7 +50,7 @@
         color: white;
         font-size: 11px;
         position: relative;
-        right: 199px;
+        right: 204px;
         bottom: 676px;
         font-family: "PT Sans";
     }
