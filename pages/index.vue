@@ -28,7 +28,6 @@ const currDay = computed(() => format(now.value, 'EEE MMM d'));
 const screenIsLocked = ref(true);
 onKeyStroke(true, (e) => {
     screenIsLocked.value = false;
-    e.preventDefault();
 });
 
 // Idle stuff
